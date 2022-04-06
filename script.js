@@ -625,10 +625,6 @@ function calc() {
 
 
 
-
-
-
-
 function loop() {
     if (document.getElementById('c1').value == "") {
         document.getElementById('titulo1').textContent= "Calcular ND"
