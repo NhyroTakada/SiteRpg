@@ -663,10 +663,24 @@ function loop() {
         document.getElementById("aa1").style.display = "block"
         document.getElementById("ab1").style.background = "yellow"
         document.getElementById("ab1").style.border = "black 2px solid"
+
+
+        document.getElementById("slui").style.animationName = "girarS03"
+        document.getElementById("slui01").style.animationName = "girarS04"
+
+        document.getElementById("slui04").style.animationName = "girarS03_"
+        document.getElementById("slui05").style.animationName = "girarS04_"
     } else {
         document.getElementById("aa1").style.display = "none"
         document.getElementById("ab1").style.background = "black"
         document.getElementById("ab1").style.border = "yellow 2px solid"
+        
+
+        document.getElementById("slui").style.animationName = "girarS01"
+        document.getElementById("slui01").style.animationName = "girarS02"
+
+        document.getElementById("slui04").style.animationName = "girarS03"
+        document.getElementById("slui05").style.animationName = "girarS04"
     }
 
     if (document.getElementById("calcPV_").checked == true) {
@@ -719,7 +733,55 @@ function loop() {
         document.getElementById("ab6").style.border = "darkorchid 2px solid"
     }
 
+
+    if (document.getElementById("table01").checked == true) {
+        document.getElementById("tbl01_").style.backgroundColor = "gold"
+        document.getElementById("tbl01_").style.border = "black 1px solid"
+
+        document.getElementById("PVAndPM").style.display = "block";
+    } else {
+        document.getElementById("tbl01_").style.backgroundColor = "black"
+        document.getElementById("tbl01_").style.border = "gold 1px solid"
+
+        document.getElementById("PVAndPM").style.display = "none";
+    }
+    
+
+    if (document.getElementById("table01").checked == true) {
+        document.getElementById("tbl01_").style.backgroundColor = "gold"
+        document.getElementById("tbl01_").style.border = "black 1px solid"
+        document.getElementById("tbl01_").style.color = "black"
+
+        document.getElementById("PVAndPM").style.display = "block";
+    } else {
+        document.getElementById("tbl01_").style.backgroundColor = "black"
+        document.getElementById("tbl01_").style.border = "gold 1px solid"
+        document.getElementById("tbl01_").style.color = "gold"
+
+        document.getElementById("PVAndPM").style.display = "none";
+    }
+
+    if (document.getElementById("table02").checked == true) {
+        document.getElementById("tbl02_").style.backgroundColor = "gold"
+        document.getElementById("tbl02_").style.border = "black 1px solid"
+        document.getElementById("tbl02_").style.color = "black"
+
+        document.getElementById("NDsTbl").style.display = "block";
+    } else {
+        document.getElementById("tbl02_").style.backgroundColor = "black"
+        document.getElementById("tbl02_").style.border = "gold 1px solid"
+        document.getElementById("tbl02_").style.color = "gold"
+
+        document.getElementById("NDsTbl").style.display = "none";
+    }
+
+
+
+
     setTimeout(loop, 1000/30);
 }
 
+
 loop()
+
+/* Trabalhandono site desde 32/Março/2022 */

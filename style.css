@@ -14,7 +14,7 @@
 }
 ::-webkit-scrollbar-thumb {
     background-color: rgba(0, 0, 0, 0.2);    /* color of the scroll thumb */
-    border: 1px solid rgb(255, 255, 255);  /* creates padding around scroll thumb */
+    border: 1px solid gold;  /* creates padding around scroll thumb */
 }
 
 *{
@@ -50,20 +50,21 @@ input:focus {
     position: absolute;
     right: 7px;
     top: 60px;
-    border: rgb(0, 0, 0) 1px solid;
+    border: gold 1px solid;
     box-shadow: black 5px 10px 20px;
     z-index: -50;
+    width: 500px;
+    height: 525px;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(3px);
 
-}
-#resultados p {
-    color: rgb(255, 255, 255);
-    text-shadow: white 1px 1px 5px;
 }
 
 button{
-    background-color: rgb(100, 100, 100);
+    background-color: rgb(36, 36, 36);
     border-radius: 5px;
-    border: white solid 1px;
+    border: gold solid 1px;
+    color: gold;
 
     width: 60px;
     height: 17px;
@@ -72,11 +73,10 @@ button{
 #btn{
     position: absolute;
     right: 25px;
-    top: 540px;
+    top: 585px;
     height: 20px;
     width: 100px;
-    background-color: rgb(48, 48, 48);
-    border: black 1px solid;
+    background-color: rgb(29, 29, 29);
     box-shadow: black 5px 5px 10px;
 }
 #c1{
@@ -128,21 +128,21 @@ button{
     backdrop-filter: blur(5px);
 }
 .checkbox__{
-    border: black solid 1px;
+    border: gold solid 1px;
     padding: 0px 8px;
-    background-color: rgb(100, 100, 100);
+    background-color: rgb(0, 0, 0);
     box-shadow: black 2px 2px 5px;
     /* margin-right: 20px;
     margin-left: 3px; */
+    height: 15px;
 }
 #boxOnOff {
     display: flex;
     position: absolute;
     top: 15px;
-    left: 75px;
+    left: 20px;
 }
 #boxOnOff div{
-    width: auto;
     background-color: rgb(19, 19, 19);
     border: gold 1px solid;
     margin-right: 20px;
@@ -154,3 +154,131 @@ button{
 #ajuste {
     height: 55px;
 }
+
+table{
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    border: gold 1px solid;
+    padding: 1px;
+}
+th, td {
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    border: gold 1px solid;
+    text-align: center;
+    color: gold;
+}
+
+
+#PVAndPM {
+    position: absolute;
+    top: 85px;
+    left: 85px;
+    z-index: -49;
+    box-shadow: black 5px 5px 10px;
+}
+#PVAndPM tr th, #PVAndPM tr td {
+    font-size: 17px;
+    padding: 0px 20px;
+    margin: 1px;
+}
+
+#tbl01_ {
+    position: absolute;
+    top: 15px;
+    left: 690px;
+}
+
+
+#NDsTbl {
+    position: absolute;
+    top: 75px;
+    left: 75px;
+    z-index: -50;
+    font-size: 15px;
+    height: 500px;
+    overflow-y: scroll;
+    box-shadow: black 5px 5px 10px;
+}
+#NDsTbl tr th, #NDsTbl tr td {
+    font-size: 17px;
+    padding: 0px 20px;
+    margin: 1px;
+}
+
+#tbl02_ {
+    position: absolute;
+    top: 15px;
+    left: 635px;
+}
+
+.sluiTipo{
+    width: 100px;
+    height: 100px;
+    border: goldenrod 3px solid;
+    position: absolute;
+    top: 285px;
+    right: 205px;
+    z-index: -50;
+}
+#slui {
+    transform: rotate(22deg);
+    animation: girarS01 infinite 7s 0s ease-in-out;
+}
+#slui01 {
+    transform: rotate(68deg);
+    animation: girarS02 infinite 7s 0s ease-in-out;
+}
+#slui02 {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    top: 260px;
+    right: 180px;
+}
+#slui03 {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    top: 290px;
+    right: 210px;
+}
+#slui04 {
+    transform: rotate(45deg);
+    animation: girarS03 infinite 7s 0s ease-in-out;
+}
+#slui05 {
+    animation: girarS04 infinite 7s 0s ease-in-out;
+}
+
+
+
+@keyframes girarS01 {
+    0%{transform: rotate(22deg)}
+    100%{transform: rotate(382deg)}
+}
+@keyframes girarS02 {
+    0%{transform: rotate(68deg)}
+    100%{transform: rotate(428deg)}
+}
+@keyframes girarS03 {
+    0%{transform: rotate(45deg)}
+    100%{transform: rotate(405deg)}
+}
+@keyframes girarS04 {
+    0%{transform: rotate(0deg)}
+    100%{transform: rotate(360deg)}
+}
+
+@keyframes girarS03_ {
+    0%{transform: rotate(405deg)}
+    100%{transform: rotate(45deg)}
+}
+@keyframes girarS04_ {
+    0%{transform: rotate(360deg)}
+    100%{transform: rotate(0deg)}
+}
+
+
+
+/* Trabalhandono site desde 32/Março/2022 */

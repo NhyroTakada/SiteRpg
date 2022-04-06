@@ -142,14 +142,280 @@
     </div>
 
 
-
-
-    <div style="height: 500px; width: 500px; background-color: rgb(35, 35, 35);" id="resultados"></div>
-    <button onclick="calc();" id="btn">Calcular</button>
-
-    <table id="PVAndPM">
-
+    <label for="table01" id="tbl01_"  class="checkbox__">PV/PM</label>
+    <input type="checkbox" id="table01" hidden>
+    <table id="PVAndPM" hidden>
+        <tr>
+            <th>Tipo</th>
+            <th>Vida por nivel</th>
+            <th>Mana Por Nivel</th>
+        </tr>
+        <tr>
+            <td>Animal</td>
+            <td>4 Por nivel</td>
+            <td>Sem mana</td>
+        </tr>
+        <tr>
+            <td>Construto</td>
+            <td>5 Por nivel</td>
+            <td>1 Por nivel</td>
+        </tr>
+        <tr>
+            <td>Espírito</td>
+            <td>4 Por nivel</td>
+            <td>3 Por nivel</td>
+        </tr>
+        <tr>
+            <td>Humanoide</td>
+            <td>3 Por nivel</td>
+            <td>1 A cada 4 nivels</td>
+        </tr>
+        <tr>
+            <td>Monstro</td>
+            <td>6 Por nivel</td>
+            <td>1 Por nivel</td>
+        </tr>
+        <tr>
+            <td>Morto-vivo</td>
+            <td>6 Por nivel</td>
+            <td>3 Por nivel</td>
+        </tr>
     </table>
+
+    
+    <label for="table02" id="tbl02_"  class="checkbox__">ND</label>
+    <input type="checkbox" id="table02" hidden>
+    <table id="NDsTbl" hidden>
+        <tr>
+            <th>ND</th>
+            <th>Defesa</th>
+            <th>Resistencia</th>
+            <th>Vida</th>
+            <th>Ataque</th>
+            <th>CD/Ofenciva</th>
+            <th>Dano</th>
+        </tr>
+        <tr>
+            <th>1/4</th>
+            <td><8</td>
+            <td><4</td>
+            <td>1-9</td>
+            <td><6</td>
+            <td><8</td>
+            <td><5</td>
+        </tr>
+        <tr>
+            <th>1/3</th>
+            <td>8-9</td>
+            <td>4</td>
+            <td>10-29</td>
+            <td>6-7</td>
+            <td>8-9</td>
+            <td>5-8</td>
+        </tr>
+        <tr>
+            <th>1/2</th>
+            <td>10-11</td>
+            <td>5</td>
+            <td>30-59</td>
+            <td>8</td>
+            <td>10</td>
+            <td>9-12</td>
+        </tr>
+        <tr>
+            <th>1</th>
+            <td>12-13</td>
+            <td>6-7</td>
+            <td>60-94</td>
+            <td>9-10</td>
+            <td>11-12</td>
+            <td>13-17</td>
+        </tr>
+        <tr>
+            <th>2</th>
+            <td>14-15</td>
+            <td>8</td>
+            <td>95-129</td>
+            <td>11</td>
+            <td>13</td>
+            <td>18-22</td>
+        </tr>
+        <tr>
+            <th>3</th>
+            <td>16-17</td>
+            <td>9</td>
+            <td>130-164</td>
+            <td>12-13</td>
+            <td>14-15</td>
+            <td>23-27</td>
+        </tr>
+        <tr>
+            <th>4</th>
+            <td>18-19</td>
+            <td>10</td>
+            <td>165-199</td>
+            <td>14</td>
+            <td>16</td>
+            <td>28-32</td>
+        </tr>
+        <tr>
+            <th>5</th>
+            <td>20-21</td>
+            <td>11-12</td>
+            <td>200-234</td>
+            <td>15-17</td>
+            <td>17-18</td>
+            <td>33-37</td>
+        </tr>
+        <tr>
+            <th>6</th>
+            <td>22-23</td>
+            <td>13</td>
+            <td>235-269</td>
+            <td>18</td>
+            <td>19</td>
+            <td>38-42</td>
+        </tr>
+        <tr>
+            <th>7</th>
+            <td>24-25</td>
+            <td>14</td>
+            <td>270-304</td>
+            <td>19-20</td>
+            <td>20-21</td>
+            <td>43-47</td>
+        </tr>
+        <tr>
+            <th>8</th>
+            <td>26-27</td>
+            <td>15</td>
+            <td>305-339</td>
+            <td>21</td>
+            <td>22</td>
+            <td>48-52</td>
+        </tr>
+        <tr>
+            <th>9</th>
+            <td>28-29</td>
+            <td>16-17</td>
+            <td>340-374</td>
+            <td>22-24</td>
+            <td>23-24</td>
+            <td>53-57</td>
+        </tr>
+        <tr>
+            <th>10</th>
+            <td>30-31</td>
+            <td>18</td>
+            <td>375-409</td>
+            <td>25</td>
+            <td>25</td>
+            <td>58-62</td>
+        </tr>
+        <tr>
+            <th>11</th>
+            <td>32-33</td>
+            <td>19</td>
+            <td>410-444</td>
+            <td>26-27</td>
+            <td>26-27</td>
+            <td>63-67</td>
+        </tr>
+        <tr>
+            <th>12</th>
+            <td>34-35</td>
+            <td>20</td>
+            <td>445-479</td>
+            <td>28</td>
+            <td>28</td>
+            <td>68-72</td>
+        </tr>
+        <tr>
+            <th>13</th>
+            <td>36-37</td>
+            <td>21-22</td>
+            <td>480-514</td>
+            <td>29-31</td>
+            <td>29-30</td>
+            <td>73-77</td>
+        </tr>
+        <tr>
+            <th>14</th>
+            <td>38-39</td>
+            <td>23</td>
+            <td>515-549</td>
+            <td>32</td>
+            <td>31</td>
+            <td>78-82</td>
+        </tr>
+        <tr>
+            <th>15</th>
+            <td>40-41</td>
+            <td>24</td>
+            <td>550-584</td>
+            <td>33-34</td>
+            <td>32-33</td>
+            <td>63-67</td>
+        </tr>
+        <tr>
+            <th>16</th>
+            <td>42-43</td>
+            <td>25</td>
+            <td>585-619</td>
+            <td>35</td>
+            <td>34</td>
+            <td>88-92</td>
+        </tr>
+        <tr>
+            <th>17</th>
+            <td>44-45</td>
+            <td>26-27</td>
+            <td>620-654</td>
+            <td>36-38</td>
+            <td>35-36</td>
+            <td>93-97</td>
+        </tr>
+        <tr>
+            <th>18</th>
+            <td>46-47</td>
+            <td>28</td>
+            <td>655-689</td>
+            <td>39</td>
+            <td>37</td>
+            <td>98-102</td>
+        </tr>
+        <tr>
+            <th>19</th>
+            <td>48-49</td>
+            <td>29</td>
+            <td>690-724</td>
+            <td>40-41</td>
+            <td>38-39</td>
+            <td>103-107</td>
+        </tr>
+        <tr>
+            <th>20</th>
+            <td>50-51</td>
+            <td>30</td>
+            <td>725-760</td>
+            <td>42</td>
+            <td>40</td>
+            <td>108</td>
+        </tr>
+        
+        
+    </table>
+
+
+    <div id="slui" class="sluiTipo"></div>
+    <div id="slui01" class="sluiTipo"></div>
+    <div id="slui02" class="sluiTipo"></div>
+    <div id="slui03" class="sluiTipo"></div>
+    <div id="slui04" class="sluiTipo"></div>
+    <div id="slui05" class="sluiTipo"></div>
+
+    <div id="resultados"></div>
+    <button onclick="calc();" id="btn">Calcular</button>
 
 
 
@@ -166,3 +432,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+<!-- Trabalhandono site desde 32/Março/2022 -->
