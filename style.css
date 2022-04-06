@@ -1,0 +1,157 @@
+
+:root{
+    /* Texto */
+    --textoBasico: rgb(255, 255, 255);
+    /* Fundo */
+    --fundoBasico: rgb(34, 34, 34);
+}
+
+::-webkit-scrollbar {
+    width: 8px;               /* width of the entire scrollbar */
+}
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.4);        /* color of the tracking area */
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);    /* color of the scroll thumb */
+    border: 1px solid rgb(255, 255, 255);  /* creates padding around scroll thumb */
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-style: none;
+    color: var(--textoBasico);
+}
+body{
+    background-color: var(--fundoBasico);
+    padding: 20px;
+}
+
+input{
+    width: 60px;
+    height: 17px;
+    color: gold;
+    border-radius: 5px;
+    text-align: center;
+    border: gold solid 1px;
+    background-color: rgb(19, 19, 19);
+}
+input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    border-radius: 0%;
+}
+
+#resultados{
+    padding: 5px;
+    overflow-y: scroll;
+    font-size: 17px;
+    position: absolute;
+    right: 7px;
+    top: 60px;
+    border: rgb(0, 0, 0) 1px solid;
+    box-shadow: black 5px 10px 20px;
+    z-index: -50;
+
+}
+#resultados p {
+    color: rgb(255, 255, 255);
+    text-shadow: white 1px 1px 5px;
+}
+
+button{
+    background-color: rgb(100, 100, 100);
+    border-radius: 5px;
+    border: white solid 1px;
+
+    width: 60px;
+    height: 17px;
+}
+
+#btn{
+    position: absolute;
+    right: 25px;
+    top: 540px;
+    height: 20px;
+    width: 100px;
+    background-color: rgb(48, 48, 48);
+    border: black 1px solid;
+    box-shadow: black 5px 5px 10px;
+}
+#c1{
+    width: 250px;
+    height: 30px;
+    font-size: 25px;
+    box-shadow: black 5px 5px 10px;
+}
+
+#nameTitle{
+    position: absolute;
+    top: 5px;
+    right: 75px;
+    background-color: rgb(25, 25, 30);
+    border: black 1px solid;
+    color: gold;
+    padding: 3px 7px;
+    box-shadow: black 5px 5px 10px;
+}
+
+.titulos {
+    margin-top: 10px;
+}
+
+#g1{
+    width: 100px;
+}
+
+#imgFundo {
+    background-image: url(img/FCM.png);
+    position: absolute;
+    top: 75px;
+    left: 75px;
+    width: 500px;
+    height: 500px;
+    z-index: -100;
+    box-shadow: black 5px 10px 20px;
+}
+
+.fundoDiv{
+    background-color: rgba(0, 0, 0, 0.4);
+    border: rgb(25, 25, 30) 1px solid;
+    box-shadow: black 5px 5px 10px;
+    width: 775px;
+    height: 60px;
+    padding: 5px 15px;
+    margin-top: 10px;
+    display: none;
+    backdrop-filter: blur(5px);
+}
+.checkbox__{
+    border: black solid 1px;
+    padding: 0px 8px;
+    background-color: rgb(100, 100, 100);
+    box-shadow: black 2px 2px 5px;
+    /* margin-right: 20px;
+    margin-left: 3px; */
+}
+#boxOnOff {
+    display: flex;
+    position: absolute;
+    top: 15px;
+    left: 75px;
+}
+#boxOnOff div{
+    width: auto;
+    background-color: rgb(19, 19, 19);
+    border: gold 1px solid;
+    margin-right: 20px;
+    margin-left: 3px;
+    padding: 2px;
+    box-shadow: black 5px 5px 10px;
+
+}
+#ajuste {
+    height: 55px;
+}
+
