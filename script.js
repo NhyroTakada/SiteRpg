@@ -458,7 +458,7 @@ function calcDano() {
 function calc() {
 
     let nome = document.getElementById('c1').value;
-    let divdir = document.getElementById('b1').value;
+    let divdir = 6;
 
 
 
