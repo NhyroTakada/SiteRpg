@@ -26,6 +26,7 @@
 body{
     background-color: var(--fundoBasico);
     padding: 20px;
+    user-select: none;
 }
 
 input{

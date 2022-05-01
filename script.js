@@ -465,7 +465,6 @@ function calc() {
 
 
     
-    
 
 
 
@@ -484,19 +483,19 @@ function calc() {
 
         if (_ND_ >= 1) {
             _ND_ = Math.floor(_ND_);
-            XP_ = (_ND_ * 300);
+            XP_ = (_ND_ * 1000);
         } else {
             if (_ND_ >= (1/2)) {
                 _ND_ = "(1/2)";
-                XP_ = ((1/2) * 300);
+                XP_ = ((1/2) * 1000);
             } else 
             if (_ND_ >= (1/3)) {
                 _ND_ = "(1/3)";
-                XP_ = ((1/3) * 300);
+                XP_ = ((1/3) * 1000);
             } else 
             if (_ND_ >= (1/4)) {
                 _ND_ = "(1/4)";
-                XP_ = ((1/4) * 300);
+                XP_ = ((1/4) * 1000);
             } else {
                 _ND_ = "Muito Fraco";
                 XP_ = "Nenhum";
